@@ -1,4 +1,5 @@
 tomcat_version: 8.5.6
+tomcat_service_name: tomcat8
 tomcat_archive_directory_name: apache-tomcat-{{tomcat_version}}
 tomcat_download_url: http://archive.apache.org/dist/tomcat/tomcat-8/v{{tomcat_version}}/bin/{{tomcat_archive_directory_name}}.tar.gz
-tomcat_home: /var/lib/tomcat8
+tomcat_home: /var/lib/{{tomcat_service_name}}
