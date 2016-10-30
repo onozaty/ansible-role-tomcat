@@ -23,7 +23,7 @@
     group: tomcat
   when: not tm.stat.exists
 
-- name: Remove Tomcat home directory symlink
+- name: Set Tomcat home directory symlink
   file: src={{tomcat_install_directory}}/apache-tomcat-{{tomcat_version}} path={{tomcat_home}} state=link force=yes
 
 - name: Add Tomcat systemd
